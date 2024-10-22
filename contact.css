@@ -1,124 +1,115 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     font-family: "Poppins", sans-serif;
 }
-#back{
-    height:100vh;
-    width:100vw;
-    background-color: #2b2d42;
+
+#back {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2b2d42;                                                                                                                    
 }
-#b-main{
+
+#b-main {
     height: 68vh;
     width: 54vw;
     background-color: #ffd60a;
-    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     position: absolute;
-    top:15%;
-    left:27%;
-    display:flex;
-}
-#left{
-    height:100%;
-    width:45%;
-}
-#right{
-    height:100%;
-    width:55%;  
-}
-#get{
-    height:10%;
-    width:auto;
-    font-size: xx-large;
-}
-#feel{
-    height:5%;
-    width:auto;
-    font-size: medium;
-}
-#type{
-    height:69%;
-    width: 85%;
+    top: 15%;
+    left: 27%;
     display: flex;
-    flex-direction:column;
 }
-#name{
-    height:40px;
-    width: auto;
-    padding-inline: 25px;
-    background-color: #ffd60a;
-    border:0.2px solid black;
+
+#left {
+    height: 100%;
+    width: 45%;
 }
-#email{
-    height:40px;
-    width: auto;
-    padding-inline: 25px;
-    background-color: #ffd60a;
-    border:0.2px solid black;
+
+#right {
+    height: 100%;
+    width: 55%;  
 }
-#message{
-    height:120px;
-    width: auto;    
-    background-color: #ffd60a;
-    border:0.2px solid black;
-    padding: 10px 0 0 10px;
+
+#get {
+    height: 10%;
+    font-size: 2rem; /* Changed to rem for scalability */
 }
-#send{
-    background-color: #7209b7;
-    border:none;
-    color:white;
-    height:50px;
-    width:130px;
-    border-radius: 30px;
-    font-size: larger;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+
+#feel {
+    height: 5%;
+    font-size: 1rem; /* Changed to rem for consistency */
 }
-#send:hover{
-    scale:1.1;
-}
-input{
-    outline:none;
-}
-textarea{
-    outline: none;
-}
-#f-main{
-    height:58vh;
-    width:25vw;
-    position:absolute;
-    top:20%;
-    left:22%;
-    background-color:black;
-    box-shadow: 0 0 15px rgba(0,0,0,0.7);
-    position: absolute;
+
+#type {
+    height: 69%;
+    width: 85%;
     display: flex;
     flex-direction: column;
 }
-#contact{
+
+input, 
+textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 10px; /* Consistent padding */
+    background-color: #ffd60a;
+    border: 0.2px solid black;
+    outline: none;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+#name,
+#email {
+    height: 40px; /* Specific height for inputs */
+}
+
+#message {
+    height: 120px; /* Specific height for textarea */
+}
+
+#send {
+    background-color: #7209b7;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    font-size: 1.2rem; /* Changed to rem for scalability */
+    transition: transform 0.3s ease; /* Updated transition */
+    cursor: pointer;
+}
+
+#send:hover {
+    transform: scale(1.1); /* Use transform for hover effect */
+}
+
+#f-main {
+    height: 58vh;
+    width: 25vw;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
     height: 20%;
-    width:auto;
-    color:white;
-    font-size: xx-large;
-    padding:25px 0 0 25px;
+    color: white;
+    font-size: 2rem; /* Changed to rem for scalability */
+    padding: 25px 0 0 25px;
 }
-#details{
-    height:75%;
-    width:auto;
-    padding:2px 0 0 30px;
+
+#details {
+    height: 75%;
+    padding: 2px 0 0 30px;
 }
-.fa-location-dot{
-    color:white;
-    font-size: x-large;
-}
-.fa-envelope{
-    color:white;
-    font-size: x-large;
-}
-.fa-phone{
-    color:white;
-    font-size: x-large;
-}
-.fa-instagram{
-    color:white;
-    font-size: xx-large;
+
+.fa-location-dot,
+.fa-envelope,
+.fa-phone,
+.fa-instagram {
+    color: white;
+    font-size: 2rem; /* Changed to rem for consistency */
 }
